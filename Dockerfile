@@ -40,4 +40,6 @@ COPY run.py /
 
 WORKDIR /app
 
+EXPOSE 3000
+
 CMD ["python", "/run.py"]
