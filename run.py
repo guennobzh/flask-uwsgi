@@ -16,4 +16,4 @@ if not os.path.exists('/venv/bin'):
         os.system('pip install wheel uwsgi flask')
 
 # Start uwsgi
-os.system('/venv/bin/uwsgi --ini uwsgi.ini')
+os.system('/venv/bin/uwsgi --ini uwsgi.ini --pidfile=/tmp/uwsgi.pid')
